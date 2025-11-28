@@ -1,0 +1,10 @@
+<h1>Bike Store</h1>
+<ul>
+  {% for bike in bikes %}
+    <li>
+      <a href="{{ bike.get_absolute_url }}">
+        {{ bike.name }} - ₹{{ bike.price }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
